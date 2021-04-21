@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html class="loading" lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Journée Git et Github</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
+  </head>
+
+  <body class="vertical-layout vertical-menu 2-columns  menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu" data-color="bg-gradient-x-primary-blue" data-col="2-columns" data-thp-controller="days"
+  data-thp-action="show" data-thp-layout="dashboard">
+    <div class="container">
+      <div class="p-5">
+        <div class='row m-3'>
+          <div class='col-12'>
+            <div class='card'>
+              <div class='card-header' style='border-top: 3px solid #5E66E5'>
+                <h1>
+                Ressource : 
+                Terminal, Git : appréhender ces ressources
+                </h1>
+                <a class='heading-elements-toggle'>
+                  <i class='la la-ellipsis-v font-medium-3'></i>
+                </a>
+                <div class='heading-elements'>
+                  <ul class='list-inline mb-0'>
+                    <li>
+                      <a href="/fr/dashboard/courses/4/lessons/489/lesson_submissions/new"><i class='ft-edit' data-original-title='Proposer une amélioration' data-placement='top' data-toggle='tooltip'></i>
+                    </a></li>
+                    <li>
+                      <a data-action='collapse'>
+                        <i class='ft-minus'></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-action='expand'>
+                        <i class='ft-maximize'></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class='card-content collapse show'>
+                <div class='card-body'>
+                  <div class='tab-pane active' id='home1' role='tabpanel'>
+                    <h2>1. Introduction</h2>
+                    <p>Ceci est une ressource visant à te préparer psychologiquement à la journée d'aujourd'hui. En soit, cette journée n'est pas dure, mais dense en terme de quantité d'information que tu vas ingurgiter. Nous allons donc faire un disclaimer sur Git, et le terminal.</p>
+
+                    <p>Le projet du jour fait partie des projets que tu pourrais faire en 5 minutes en fin de formation, mais qui peuvent prendre pas mal de temps. Ne t'en fais pas si tu galères : tu auras toute la formation pour appréhender le terminal, et Git.</p>
+
+                    <h2>2. Historique et contexte</h2>
+                    <p>Les notions que tu vas appréhender aujourd'hui sont indispensables dans l'apprentissage de l'informatique, mais peuvent être hermétiques pour une première approche.</p>
+
+                    <p>Traditionnellement, les moussaillons sont en PLS pour ces ressources, donc ne t'en fais pas si tu as l'impression de galérer.</p>
+                    <h2>3. La ressource</h2>
+                    <h3>3.1. Terminal et Git : une approche exhaustive</h3>
+                    <p>Dans ces ressources, nous avons fait exprès de vous donner une approche exhaustive du terminal, ainsi que de Git. Cela vous permet d'avoir une "bible" sur laquelle vous appuyer pour les bases.</p>
+
+                    <p>Le soucis est que ce sont des éléments indispensables dans l'univers du code, et que la première fois que l'on s'en sert, notre cerveau fume 👿</p>
+
+                    <p>Encore une fois, n'aie pas peur devant la quantité d'information à ingurgiter, cela viendra au fur et à mesure de la formation :)</p>
+                    <h3>3.2. Le terminal : à quoi ça sert ?</h3>
+                    <p>Avant de te faire attaquer le terminal, nous allons te dire à quoi ça sert. Si tu comprends cela, c'est un bon début 😊</p>
+
+                    <p>Il faut voir le terminal comme un équivalent à ton <a href="https://i.imgur.com/1Uz4YNm.jpeg" target="_blank">environnement de bureau</a>. Tu pourras créer des fichiers, naviguer dans des dossiers, ouvrir des fichiers, exécuter des programmes. La principale différence est que ton environnement de bureau traditionnel a des jolies icônes sur lesquelles tu peux cliquer, et que pour ton terminal tu devras écrire toutes les actions que tu veux faire à la main.</p>
+
+                    <p>Pourquoi ne pas se servir de notre environnement de bureau alors ? C'est une excellente question. L'environnement de bureau traditionnel est bien plus intuitif que le terminal, qui fait peur avec son écran noir 👻</p>
+
+                    <p>Le gros point fort du terminal est que tu peux faire ce que tu veux avec. Si tu veux compter la taille totale des fichiers JPEG d'un dossier quelconque, c'est possible avec le terminal. Ton environnement de bureau est juste une version graphique du terminal, avec des fonctionnalités en moins. Ainsi, depuis que l'informatique existe, tous les développeurs du monde entier utilisent le terminal car ce dernier permet de faire des choses que ton environnement de bureau ne permet pas.</p>
+
+                    <p>Le gros défaut du terminal est que tu vas apprendre à utiliser la notion de Command Line Interface (CLI pour les intimes). Au lieu de faire "double clic sur un fichier" pour ouvrir un fichier, ou bien "clic droit, créer dossier" pour créer un dossier, tu devras rentrer manuellement au clavier les commandes à ceci 😱 Ne t'en fais pas, c'est dur au début, mais cela viendra avec le temps. Ne désespère pas et dis-toi que tout le monde est passé par là.</p>
+
+                    <h3>3.3. Git : à quoi ça sert ?</h3>
+                    <p>Git est un logiciel de gestion de version. Oula, rien que d'entendre ça, tu as mal à la tête 😅 Ne t'en fais pas, en fait c'est simple. Git permet de créer un historique de sauvegardes des fichiers d'un projet, et propose un système de gestion de projets collaboratifs. C'est simple comme ça, non ?</p>
+
+                    <p>Imagine tu travailles en équipe sur la même page web. Jean-Michel s'occupe du fichier CSS, Joséphine du fichier <code>index.html</code>, et Gertrude du fichier <code>contact.html</code>. Comment faire pour travailler en équipe ou pour revenir en arrière ? Git est là pour toi et permet exactement ceci.</p>
+
+                    <p>Idem, l'outil est en général un truc de geek très mal expliqué, mais c'est un outil tellement puissant que je me demande pourquoi il n'y a que les développeurs qui s'en servent.</p>
+                    <h2>4. Points importants à retenir</h2>
+                    <p>Les ressources suivantes vont être très denses, pas besoin de tout comprendre par coeur, retiens juste l'essentiel, tu auras 12 semaines pour te faire à Git et au terminal.</p>
+
+                    <p>Le terminal est une version non graphique de l'environnement de bureau.</p>
+
+                    <p>Git est un outil de gestion d'historique de projets extrêmement pratique pour la gestion de fichiers importants.</p>
+
+
+                    <h2>5. Pour aller plus loin</h2>
+                    <p>Tu peux lire les ressources que l'on a données à la suite 😇</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='row m-3'>
+          <div class='col-12'>
+            <div class='card'>
+              <div class='card-header' style='border-top: 3px solid #5E66E5'>
+                <h1>
+                Ressource : 
+                Le terminal : le fameux écran noir des hackeurs
+                </h1>
+                <a class='heading-elements-toggle'>
+                  <i class='la la-ellipsis-v font-medium-3'></i>
+                </a>
+                <div class='heading-elements'>
+                  <ul class='list-inline mb-0'>
+                    <li>
+                      <a href="/fr/dashboard/courses/4/lessons/299/lesson_submissions/new"><i class='ft-edit' data-original-title='Proposer une amélioration' data-placement='top' data-toggle='tooltip'></i>
+                    </a></li>
+                    <li>
+                      <a data-action='collapse'>
+                        <i class='ft-minus'></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-action='expand'>
+                        <i class='ft-maximize'></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class='card-content collapse show'>
+                <div class='card-body'>
+                  <div class='tab-pane active' id='home1' role='tabpanel'>
+                    <h3>1. Introduction</h3>
+                    <p>Accroche-toi à tes chaussettes, car nous allons maintenant découvrir les bases du terminal ! Il s'agit d'un outil très puissant permettant de "parler" à son ordinateur. Nous allons voir : comment interagir avec le terminal, comment jouer avec ses premiers fichiers, et bien d'autres choses utiles. C'est plutôt fun, tu vas voir !</p>
+
+                    <h4>1.1. Ce que tu vas apprendre dans cette ressource</h4>
+                    <p>Voici la liste des questions auxquelles tu vas pouvoir répondre avec cette ressource :</p>
+                    <ul>
+                      <li>Qu'est-ce que le terminal ?</li>
+                      <li>Que veulent dire GUI et CLI ?</li>
+                      <li>Comment lancer un terminal ?</li>
+                      <li>Comment exécuter ses premières fonctions avec un terminal ?</li>
+                      <li>Pourquoi la notion de géographie est très importante dans un terminal ?</li>
+                      <li>Qu'est-ce que VIM et comment s'en servir ?</li>
+                    </ul>
+
+                    <h3>2. Historique</h3>
+                    <p>Le terminal -- ce que l'on appelle plus communément un <i>interpréteur de commande</i> (ou command-line interpreter - CLI - en anglais) -- est un outil qui interprète les commandes tapées au clavier dans l'interface de ligne de commande.</p>
+
+                    <p>À la base, les ordinateurs tournaient sans interface graphique. Les utilisateurs n'avaient donc pas d'autre choix que de passer par les CLI pour effectuer une action. L'arrivée des systèmes d'exploitation graphiques (Windows, Apple, Linux) n'a pourtant pas tué la popularité de la CLI car il permet de faire des tâches extrêmement précises.</p>
+
+                    <p>En gros, c'est une version texte de l'explorateur de fichiers : on peut ouvrir des dossiers, créer des fichiers, les lancer, les renommer, installer des programmes, et bien d'autres choses. On dit que c'est une <b>CLI</b> (Command Line Interface), comparée à la <b>GUI</b> (Graphical User Interface) de l'explorateur normal. Tout est fait via le clavier, donc pas besoin de souris pour l'utiliser.</p>
+
+                    <h3>3. Le terminal</h3>
+
+                    <h4>3.1. Qu'est-ce que le terminal ?</h4>
+                    <p>Le terminal est un outil intimidant aux premiers abords, mais pas si compliqué au final. J'ai réalisé une vidéo pour l'expliquer :</p>
+
+                    <div class="embed-responsive embed-responsive-21by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/myz_6xrDwR4"></iframe>
+                    </div><br><br>
+
+                    <h4>3.2. Comment le lancer ?</h4>
+                    <h5>3.2.1. Sur macOS</h5>
+                    <p><code>CMD</code> + <code>SPACE</code>, puis écrire <code>Terminal</code> (ou iTerm), <code>Enter</code>.</p>
+
+                    <h5>3.2.2. Sur Linux</h5>
+                    <p><code>CTRL</code> + <code>ALT</code> + <code>T</code>.</p>
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🚀 ALERTE BONNE ASTUCE</h4>
+                          <p class="card-text">Si tu utilises Linux, passe ton terminal en anglais. Ça va vraiment t'aider lorsqu'il te renverra des erreurs. En effet, comme l'anglais est la langue d'internet, la majorité des gens ayant eu ton problème vont le poster en anglais. Tu auras ainsi 100 fois plus de résultats sur Google qu'avec une erreur postée en français.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <h5>3.2.3. Sur Windows</h5>
+                    <p>Sur Windows, le terminal sera géré de manière un chouilla différente. Pendant toute la formation, nous allons utiliser un terminal de type <a href="https://fr.wikipedia.org/wiki/Shell_Unix" target="_blank">Shell Unix</a>, car c'est le plus utilisé au monde et qu'il sera donc plus aisé pour toi de trouver des réponses en cas de problème. Le terminal <i>Shell Unix</i> est celui qui est installé de base pour Linux et macOS. Celui de Windows est l'invite de commandes, qui est de type DOS. Bon je sais, ça commence à faire beaucoup d'infos... Mais essaie au moins de retenir ces points :</p>
+
+                    <ul>
+                      <li>macOS et Linux utilisent le même "noyau" de système d'exploitation : Unix ; tandis que Windows utilise DOS.</li>
+                      <li>Le terminal de macOS et Linux est de type Shell Unix, tandis que celui de Windows est de type DOS. Ce qui fait que l'invite de commandes de Windows aura une utilisation différente de celui de type Unix Shell.</li>
+                      <li>Dans le milieu de la programmation, le terminal de type Shell Unix est universellement utilisé.</li>
+                      <li>Si tu es utilisateur de Windows, nous te demanderons de trouver une alternative à l'invite de commandes.</li>
+                    </ul>
+
+                    <p>Pas de panique, nous avons pensé à toi si tu es sur Windows ! Voici quelques alternatives qui feront le travail :</p>
+
+                    <ul>
+                      <li>La solution de facilité pour les grands débutants du terminal est d'utiliser le "git bash", qui vient avec ton installation de Git que tu utiliseras tout le long de la formation. Télécharge et installe <a href="https://gitforwindows.org/" target="_blank">Git pour WIndows</a> et utilise le Git bash. Le Git Bash te donne les commandes de base en terminal et suffira amplement pour ton utilisation de la première semaine :)</li>
+                      <li>C'est en constatant le rejet universel de Windows chez les développeurs qu'un certain
+                    Satya Nadella a travaillé dur pour proposer une alternative décente. Ainsi, <b>si tu es sur Windows 10</b>, il existe un terminal Shell Unix qui s'appelle <i>Windows Subsystem for Linux</i> et qui installe une version de Linux sur Windows dont tu peux te servir</li>
+                    </ul>
+
+                    <h4>3.3. Premières fonctions ?</h4>
+                    <p>Pour faire marcher le terminal, rien de plus simple : il suffit de rentrer le texte correspondant à une fonction pour que celle-ci s'exécute. Par exemple, si dans l'explorateur en GUI il suffit de double cliquer sur <code>mon_fichier.txt</code> pour l'ouvrir, il faudra taper <code>open mon_fichier.txt</code> (sur macOS) ou <code>xdg-open mon_fichier.txt</code> (sur Linux)  dans le terminal pour faire de même. On va tester ça avec notre première fonction :</p>
+                    <pre><code class="language-bash">$ echo "Hello world !"</code></pre>
+                    <p><i>(je commence toutes les commandes de terminal avec un <code>$</code>. C'est une convention qui aide à reconnaître les commandes de CLI, mais qui ne fait pas partie de la commande. Enlève donc bien le $ au moment de tester !)</i></p>
+                    <p>Si tu exécutes cette commande, le terminal devrait te renvoyer <code>Hello world !</code> (cette phrase est <a href="https://fr.wikipedia.org/wiki/Hello_world" target="_blank">un grand classique de la programmation</a>). Et là, BOUM ! Tu viens d'exécuter ta première commande de terminal 🎉.<br>
+                    Maintenant nous allons voir quelques commandes basiques.</p>
+
+                    <h5>3.3.1. PWD</h5>
+                    <p><code>pwd</code> est l'acronyme de Print Working Directory, une commande affichant le dossier dans lequel tu es actuellement.</p>
+                    <pre><code class="language-bash">$ pwd</code></pre>
+                    <p>Pour moi, <code>pwd</code> me renvoie :</p>
+                    <pre><code class="language-bash">/Users/felix</code></pre>
+                    <p>C'est comme dans l'explorateur en GUI, quand tu double-cliques sur <code>felix</code>, il te déplace dans le dossier <code>felix</code> qui est dans le dossier <code>Users</code>.</p>
+
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🚀 ALERTE BONNE ASTUCE</h4>
+                          <p class="card-text"><code>pwd</code> est généralement la première commande que l'on tape quand on arrive dans le terminal de quelqu'un car c'est idéal pour s'y retrouver ✌️</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h5>3.3.2. LS</h5>
+                    <p><code>ls</code> est le diminutif de <i>list</i>. Cette fonction affiche les fichiers et dossiers situés dans mon dossier actuel.</p>
+                    <pre><code class="language-bash">$ ls</code></pre>
+                    <p>Pour moi, <code>ls</code> me renvoie :</p>
+                    <pre><code class="language-bash">Applications/   Dropbox/     Music/       Desktop/
+                    Pictures/     Documents/    Library/     Public/
+                    Downloads/    Movies/</code></pre>
+                    <p>Dans le terminal, nous pouvons ajouter des options à la plupart des fonctions en utilisant la syntaxe <code>$ fonction -option</code>. Par exemple, je peux faire <code>ls -a</code> (a pour "all"), ce qui a pour effet d'afficher aussi les fichiers commençant par un <code>.</code> (fichiers de devs en général). Je peux faire <code>ls -l</code> pour afficher la liste au format long. Et je peux même combiner les deux en faisant <code>ls -al</code>.</p>
+
+
+                    <h5>3.3.3. MAN</h5>
+                    <p><code>man</code> est le diminutif de <i>manual</i>. Man lance un programme permettant de lire le manuel d'une fonction précise. Pratique pour connaître toutes ses spécificités ! Pour s'en servir, il suffit de taper : <code>man fonction</code>. Par exemple, pour afficher le manuel de la commande ls, je dois taper :</p>
+                    <pre><code class="language-bash">$ man ls</code></pre>
+                    <p>Cette commande m'ouvrira le manuel de ls, que je peux quitter à tout moment en tapant <code>q</code> (comme... "quit").</p>
+
+                    <h4>3.4. Où sommes-nous ?</h4>
+                    <p>La notion de géographie est <b>fondamentale</b> pour le terminal. Tout comme dans l'explorateur en GUI, on se déplace aussi de dossiers en dossiers dans le terminal. Si jamais tu veux ouvrir un fichier en tapant <code>open file.txt</code> (sur macOS) ou <code>xdg-open file.txt</code> (sur Linux) et que tu ne te trouves pas dans le bon dossier, le terminal te renverra une erreur. C'est un peu comme si tu essayais de double-cliquer sur file.txt dans le mauvais dossier : impossible, car il n'y est pas.</p>
+                    <p>Tu vas donc devoir te déplacer de dossiers en dossiers pour ouvrir et interagir avec les bons fichiers.</p>
+
+                    <h4>3.5. CD</h4>
+                    <p><code>cd</code> est l'acronyme de <i>Change Directory</i>. Cette commande permet de naviguer entre dossiers. Il s'agit en quelque sorte d'un double-clic sur un dossier 😁</p>
+                    <pre><code class="language-bash">$ cd nomdudossier</code></pre>
+                    <p>Tu te déplaceras dans le dossier nommé <code>nomdudossier</code> (s'il existe là où tu te trouves).</p>
+
+                    <p>Tu peux aussi te déplacer vers le dossier parent en faisant <code>$ cd ..</code></p>
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🚀 ALERTE BONNE ASTUCE</h4>
+                          <p class="card-text">Utiliser la touche <code>TAB</code> permet de faire de l'autocompletion, très pratique pour cette méthode. Aussi, faire <code>cd</code> + [ESPACE] + <code>TAB</code> + <code>TAB</code> affiche les dossiers disponibles.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h4>3.6. Autres fonctions</h4>
+                    <h5>3.6.1. Créer un fichier</h5>
+                    <p>En tapant :</p>
+                    <pre><code class="language-bash">$ touch nomdufichier</code></pre>
+                    <p>Cette commande va créer un fichier qui s'appelle <i>nomdufichier</i></p>
+
+                    <h5>3.6.2. Copier</h5>
+                    <p>Pour copier un fichier ou un dossier et le coller ailleurs, il suffit de rentrer :</p>
+                    <pre><code class="language-bash">$ cp fichier_à_copier lieu_de_destination</code></pre>
+
+                    <h5>3.6.3. Déplacer</h5>
+                    <p>Pour déplacer (couper) un fichier ou un dossier d'un endroit vers un autre, il suffit de rentrer :</p>
+                    <pre><code class="language-bash">mv [fichier_à_déplacer] [lieu_de_destination]</code></pre>
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🚀 ALERTE BONNE ASTUCE</h4>
+                          <p class="card-text"><code>mv</code> (diminutif de "move") est très pratique pour renommer un fichier. Imaginons que tu as créé un fichier "hello.rv" au lieu de "hello.rb". Oups, malheur ! Heureusement, faire <code>$ mv hello.rv hello.rb</code> résout ce petit incident en quelques coups de clavier !</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h5>3.6.4. Créer un dossier</h5>
+                    <p>Pour créer un dossier, il suffit de rentrer :</p>
+                    <pre><code class="language-bash">$ mkdir nom_du_nouveau_fichier</code></pre>
+
+                    <h5>3.6.4. Remove</h5>
+                    <p>Supprimer un fichier :</p>
+                    <pre><code class="language-bash">$ rm nomdufichier</code></pre>
+                    <p>Il est possible d'effacer un dossier ainsi que son contenu en ajoutant <code>-r</code> (comme "recursion") en option : </p>
+                    <pre><code class="language-bash">$ rm -r nomdudossier</code></pre>
+
+                    <div class="card box-shadow-0 border-success">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">📚 INSTANT CULTURE GÉ</h4>
+                          <p class="card-text"><code>rm</code> est à l'origine d'une blague vieille comme le monde. En effet, ajouter l'option <code>-f</code> permet de forcer la suppression d'un fichier, même s'il est important pour l'ordinateur. D'autre part, finir par <code>/</code> ou <code>*</code> dit à votre ordinateur d'inclure absolument tous les fichiers. Ainsi, si tu tapes <code>$ rm -rf /</code> ou <code>$ rm -rf *</code> dans ton terminal, tu dis à ce dernier de tout prendre et de tout effacer, en forçant les barrières. En plus, figure-toi que <code>rm</code> est très rapide. Il effacera donc l'intégralité de ton ordinateur en quelques secondes à peine ! Conclusion : <b>à ne jamais jamais jamais faire</b>.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <h5>3.6.5. Vim</h5>
+                    <p>Vim est l'un des éditeurs de texte les plus respectés au monde. Comme il passe uniquement par le terminal, il se marie extrêmement bien avec cet outil. Et comme il utilise juste le clavier, ses raccourcis permettent d'aller vraiment vite pour qui ose grimper la très rude courbe d'apprentissage (quelques semaines à plein temps). De ce fait, je te montrerai vim pour ta culture G, mais te demanderai de passer par un autre éditeur de texte 😉</p>
+                    <pre><code class="language-bash">$ vim nomdufichier</code></pre>
+                    <p>Cette commande permet d'ouvrir vim sur le fichier <i>nomdufichier</i> et de l'éditer. Pour quitter vim sans enregistrer, il faut rentrer <code>:q!</code>. Pour quitter en enregistrant, préférez <code>:w</code> puis <code>:q</code>, ou tout simplement <code>:wq</code>.</p>
+
+                    <h4>3.7. Autres astuces</h4>
+                    <p><code>CTRL</code> + <code>C</code> annule la fonction en cours. Pratique quand on a une boucle infinie !</p>
+                    <p>La casse est très importante, idem pour les espaces.</p>
+                    <p>Il y a des raccourcis pratiques, comme par exemple <code>CTRL</code> + <code>U</code> qui efface la ligne en cours.</p>
+                    <p>Les touches du haut et du bas permettent de naviguer dans l'historique des commandes. Super pratique pour exécuter à nouveau une commande que tu viens de taper.</p>
+
+                    <h3>4. Points importants à retenir</h3>
+                    <p>Voici les points à retenir de la ressource :</p>
+                    <ul>
+                      <li>Pour lancer le terminal sur Linux : <code>CTRL</code> + <code>ALT</code> + <code>T</code> ; pour le lancer sur macOS : <code>CMD</code> + <code>SPACE</code>, puis écrire <code>Terminal</code> (ou iTerm) et presser la touche Enter ; pour Windows il te faudra trouver un subterfuge : le Git Bash est la solution parfaite pour les débutants.</li>
+                      <li><code>man</code> permet de lancer le manuel des fonctions.</li>
+                      <li><code>pwd</code> affiche le dossier dans lequel tu es actuellement.</li>
+                      <li><code>ls</code> est une commande qui affiche les fichiers et dossiers contenus dans mon dossier actuel.</li>
+                      <li>La notion de géographie est fondamentale : le terminal n'arrivera pas à ouvrir les fichiers s'il ne se trouve pas dans le bon dossier.</li>
+                      <li><code>mkdir</code> permet de créer un dossier.</li>
+                      <li><code>cd</code> permet de changer de dossier.</li>
+                      <li><code>touch</code> permet de créer un fichier.</li>
+                      <li><code>cp</code> permet de copier un fichier.</li>
+                      <li><code>mv</code> permet de déplacer un fichier ou un dossier.</li>
+                      <li><code>rm</code> permet de supprimer un fichier.</li>
+                      <li><code>rm -r</code> permet de supprimer un dossier et son contenu.</li>
+                    </ul>
+
+                    <h3>5. Aller plus loin</h3>
+                    <p>Voici un excellent <a href="https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course" target="_blank">cours express</a> pour avoir quelques bases concernant l'utilisation du terminal. Il est un peu similaire au mien, mais aborde d'autres sujets intéressants tels que le PATH.</p>
+
+                    <p>Viking Code School ont aussi fait un <a href="https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course" target="_blank">cours sur le pimp de terminal</a> pour y intégrer de couleurs de BGs.</p>
+
+                    <p>Michael Hartl a fait une célèbre introduction au terminal nommée <a href="https://www.learnenough.com/command-line-tutorial" target="_blank">Learn Enough Command Line to Be Dangerous</a>. Cette ressource permet d'aller assez loin dans les détails de l'utilisation du terminal.</p>
+
+                    <p>Pour ceux qui veulent découvrir Vim, voici <a href="https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85" target="_blank">une marche à suivre</a> pour être champion de Vim rapidement.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='row m-3'>
+          <div class='col-12'>
+            <div class='card'>
+              <div class='card-header' style='border-top: 3px solid #5E66E5'>
+                <h1>
+                Ressource : 
+                Git et GitHub : comment sauvegarder son travail façon pro
+                </h1>
+                <a class='heading-elements-toggle'>
+                  <i class='la la-ellipsis-v font-medium-3'></i>
+                </a>
+                <div class='heading-elements'>
+                  <ul class='list-inline mb-0'>
+                    <li>
+                      <a href="/fr/dashboard/courses/4/lessons/300/lesson_submissions/new"><i class='ft-edit' data-original-title='Proposer une amélioration' data-placement='top' data-toggle='tooltip'></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-action='collapse'>
+                        <i class='ft-minus'></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-action='expand'>
+                        <i class='ft-maximize'></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class='card-content collapse show'>
+                <div class='card-body'>
+                  <div class='tab-pane active' id='home1' role='tabpanel'>
+                    <h2>1. Introduction</h2>
+                    <p>As-tu déjà travaillé en entreprise ou sur un projet étudiant ? Si oui, tu t'es peut-être déjà retrouvé dans mon cas avec un dossier qui ressemble à ça :</p>
+                    <pre><code class="language-shell">.
+                    └── big_project
+                    ├── big_project_01.xls
+                    ├── big_project_03.xls
+                    ├── big_project_final_féfé.xls
+                    ├── big_project_final.xls
+                    ├── big_project.xls
+                    └── [WIP] big_project_fin.xls</code></pre>
+
+                    <p>En gros, c'est souvent le bordel dans le monde des moldus du code. Ces derniers passent leur temps à créer des milliers de fichiers, juste au cas où  ils auraient besoin de revenir à une version précédente.</p>
+
+                    <p>Maintenant, imagine devoir travailler en équipe sur des dossiers de code contenant des milliers de fichiers. Créer des <code>index_VERSIONNUMBER.html</code> à tire-larigot n'est clairement pas la meilleure solution. L'idéal serait d'avoir un logiciel capable de faire des photographies à un instant T d'un dossier, et de préciser pour chacune de ces sauvegardes la réponse aux 4 questions suivantes :</p>
+
+                    <ul>
+                      <li><b>Quoi</b> : quels fichiers ont été modifiés dans cette photographie ?</li>
+                      <li><b>Qui</b> : qui est responsable de cette modification ?</li>
+                      <li><b>Quand</b> : de quand cette modification date ?</li>
+                      <li><b>Pourquoi</b> : pourquoi cette modification existe-t-elle ?</li>
+                    </ul>
+
+                    <p>Avec un tel logiciel, fini le stress et les dossiers remplis de fichiers inutiles ! Bonne nouvelle : ce genre de logiciels existe et on les appelle des "gestionnaires de version" (version control software). J'aime bien ce schéma de <a href="https://www.git-tower.com/learn/git/ebook/en/desktop-gui/basics/what-is-version-control" target="_blank">GitTower</a> qui explique bien à quoi ils servent : </p>
+
+                    <img src="https://i.imgur.com/ClgRIOW.png" class="img-fluid"><br>
+                    <p>Comprends-tu maintenant pourquoi le gestionnaire de version appelé <a href="https://git-scm.com/" target="_blank">Git</a> est un super logiciel, et pourquoi c'est un indispensable dans l'univers du code ? Dans cette ressource, nous verrons comment l'installer et s'en servir. Ensuite, nous verrons de quelle manière l'utiliser pour mettre ses dossiers en ligne avec GitHub (un équivalent de DropBox) pour te permettre de partager ton code et collaborer facilement avec d'autres devs.</p>
+                    <h2>2. Contexte et historique</h2>
+                    <p>Tout comme il existe plusieurs explorateurs Internet (Firefox, Chrome, Safari, etc), il existe plein de logiciels de gestion de versions (<a href="https://subversion.apache.org/" target="_blank">SVN</a>, <a href="https://www.bitkeeper.org/" target="_blank">BitKeeper</a>, etc). Nous allons travailler avec Git pour ce cours car c'est de très très loin le plus connu et utilisé.</p>
+
+                    <p>Git a été créé en 2005 par Linus Torvald, qui a (entre autres) créé le système d'exploitation Linux.</p>
+
+                    <p><a href="https://github.com/" target="_blank">GitHub</a> est un service de mise en ligne de projets "versionnés" via Git, créé en 2008. Il a été racheté par Microsoft en 2018 pour la modique somme de 7,5 milliards de dollars.</p>
+
+                    <p>En gros, voici ce que font Git et GitHub :</p>
+
+                    <ul>
+                      <li><b>Git</b> est un logiciel de gestion de versions. C'est à dire, un logiciel permettant de photographier à l'instant T les fichiers d'un dossier.</li>
+                      <li><b>GitHub</b> est un service en ligne qui utilise Git, et qui permet entre autres de :
+                        <ul>
+                          <li>Mettre en ligne ses dossiers Git (dans ce qu'on appelle "un repository").</li>
+                          <li>Collaborer à plusieurs sur un même dossier Git.</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <h2>3. Le cours</h2>
+                    <h3>3.1. Git</h3>
+                    <p>Nous allons maintenant voir :</p>
+
+                    <ul>
+                      <li>Comment installer Git sur ton ordinateur.</li>
+                      <li>Comment créer un dossier Git (repository).</li>
+                      <li>Comment faire une photographie (appelé "commit").</li>
+                      <li>Comment revenir à des versions précédentes.</li>
+                    </ul>
+
+
+                    <h4>3.1.1. Installation</h4>
+                    <p>Pour installer Git, rien de plus simple : va sur le site du même nom dans la rubrique <a href="https://git-scm.com/downloads" target="_blank">téléchargements</a>, choisis ton OS, puis télécharge et installe le logiciel. Redémarre ton terminal, et voilà !</p>
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🚀 ALERTE BONNE ASTUCE</h4>
+                          <p>Git est un logiciel <b>CLI</b> (<i>Command Line Interface</i>). Avec ce type de logiciels, tout passe par le terminal. Il s'oppose à <b>GUI</b>, <i>Graphical User Interface</i>.</p>
+                          <p>Exemple : lorsque tu utilises la GUI de ton explorateur de fichiers, tu double-cliques sur un fichier pour l'ouvrir. Avec la CLI, tu tapes la commande <code>$ open nom_du_fichier</code> dans ton terminal. Autre exemple : pour créer un dossier en GUI, tu cliques droit -> nouveau dossier en GUI. En CLI, tu tapes <code>$ mkdir nom_dossier</code> dans ton terminal.</p>
+                          <p>Bref, toutes les actions de ce cours traiteront de la CLI et passeront par le terminal avec les commandes que nous allons t'enseigner. Il existe  <a href="https://git-scm.com/downloads/guis" target="_blank">des versions GUI</a> pour Git, mais elles ne seront pas enseignées dans ce cours pour plusieurs raisons :</p>
+                          <ul>
+                            <li>Un peu comme Photoshop, la version GUI peut faire très peur avec ses milliers de boutons.</li>
+                            <li>Pas besoin d'avoir moult softwares installés : il suffit d'un terminal et à toi la gloire !</li>
+                            <li>Le but de cette semaine est de te donner les bases pour comprendre l'univers du développement. La version GUI n'étant pas utilisée par les devs, l'enseigner ne répond pas à notre vision : rendre l'univers du développement plus accessible.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p>Lance (ou relance) ton terminal, puis rentre la ligne suivante :</p>
+
+                    <pre><code class="language-shell">$ git --version</code></pre>
+
+                    <p>Le terminal devrait te renvoyer quelque chose comme : <code>git version X.XX.X</code>. S'il te renvoie un truc du genre <code>command not found: git</code>, c'est que tu n'as pas installé Git ou relancé ton terminal !</p>
+
+                    <p>Pour se servir de Git, c'est simple : il suffit de rentrer dans le terminal les commandes <code>$ git truc</code> ou <code>git machin</code> pour lui faire exécuter <code>truc</code> ou <code>machin</code>. Voyons maintenant la commande permettant d'initialiser un dossier git.</p>
+
+                    <h4>3.1.2. Mise en place de ton dossier : git init et git status</h4>
+                    <p>Avant de commencer, il faut dire au logiciel Git : "ceci est un dossier de travail correspondant à un projet. Initialise Git dans ce dossier stp". En gros, tu vas initialiser un <i>repository</i> Git, ce qui te permettra de faire des photographies à l'instant T. Pour ceci, mets-toi dans un dossier de travail (avec la commande <code>cd</code>) et exécute la commande suivante :</p>
+
+                    <pre><code class="language-shell">$ git init
+                    Initialized empty Git repository in /home/felix/Desktop/my_big_project/.git/</code></pre>
+
+
+                    <div class="card box-shadow-0 border-danger">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">⚠️ ALERTE ERREUR COMMUNE</h4>
+                          <p>Quand on débute dans le code, on a tendance à faire <code>git init</code> à la volée un peu partout. Il ne faut pas. Voici les types de dossiers dans lesquels tu dois initialiser des repository :</p>
+                          <ul>
+                            <li>Un dossier contenant le code de ton projet Google.</li>
+                            <li>Un dossier contenant le projet d'un site internet.</li>
+                            <li>Un dossier contenant un projet clair et défini.</li>
+                          </ul>
+                          <p>Voici où <b>tu ne dois pas</b> faire <code>git init</code> :</p>
+                          <ul>
+                            <li>Le dossier qui contient tout ton ordinateur (exemple : exécuter <code>git init</code> en première ligne de commande de ton terminal).</li>
+                            <li>Ton dossier <code>Desktop</code> ou <code>My Documents</code>.</li>
+                            <li>Un dossier <code>the_hacking_project</code> contenant tous tes projets de THP.</li>
+                            <li>Un dossier qui contiendrait plusieurs dossiers de projets différents.</li>
+                          </ul>
+                          <p>En général la <i>rule of thumbs</i> est : un git init par projet. Si jamais tu as fait <code>git init</code> dans un dossier qui n'est pas bon, tu peux supprimer le dossier caché contenant toutes les informations de git en faisant :</p>
+                          <pre><code class="language-shell">$ rm -rf .git</code></pre>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p>Et maintenant, quelle est la commande la plus importante quand on manipule git ? Réponse : <code>git status</code>. Cette commande permet de te donner en un rien de temps l'état de ton projet git. Tu peux tester en entrant git status dans un repository git :</p>
+
+                    <pre><code class="language-shell">$ git status
+                    On branch master
+
+                    No commits yet
+
+                    nothing to commit (create/copy files and use "git add" to track)</code></pre>
+
+                    <p>Le logiciel git te dit actuellement qu'il n'y a rien dans ton dossier, et donc rien à photographier ("nothing to commit"). Voyons maintenant comment faire un commit, justement.</p>
+
+                    <h4>3.1.3. Faire un commit</h4>
+                    <p>Un commit est une photographie à un instant T d'un projet. Pour faire court, tu vas prendre certains fichiers et les ajouter à la liste de ceux que tu veux photographier (cette liste peut aussi être vide). Ensuite, tu vas faire ta photographie en faisant <code>git commit</code>.</p>
+
+                    <h5>3.1.3.1. Ajouter un fichier avec git add</h5>
+                    <p>Pour savoir quels fichiers git va prendre en photo, il faut les ajouter avec la commande <code>git add</code> :</p>
+
+                    <pre><code class="language-shell">$ git add nom_de_ton_fichier</code></pre>
+
+                    <p>Tu peux voir avec <code>git status</code> que ton fichier est bien ajouté.</p>
+
+                    <h5>3.1.3.2. Faire un commit avec git commit</h5>
+                    <p>Maintenant que tu as ajouté tes fichiers à la liste, tu as juste à les prendre en photo avec la commande <code>git commit</code> :</p>
+
+                    <pre><code class="language-shell">$ git commit -m "I made a change this is a comment why I did it"
+                    [master (root-commit) cfec956] change
+                    n files changed, m insertions(+), x deletions(-)
+                    create mode 100644 blabla</code></pre>
+
+                    <p>Et voilà comment marche le commit !</p>
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🤓 QUESTION RÉCURRENTE</h4>
+                          <p><b>Mais dis-donc Jamy, pourquoi écrire <code>git commit -m "mon commentaire"</code> et pas <code>git commit</code> tout simplement ?</b><br>
+                          Excellente question. La commande <code>git commit</code> va ouvrir un fichier qui te demandera d'écrire un long message de commit avec Vim. Pas très pratique. Ainsi, comme l'option <code>-l</code> qui affiche les résultats de <code>ls</code> au format long, nous allons utiliser l'option <code>-m</code> qui permet d'écrire le message de commit directement dans la commande.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <h5>3.1.3.3. Exemple avec un petit projet</h5>
+                    <p>Comme il n'est pas aisé d'expliquer les commits, je te propose un petit pas à pas pour t'aider à comprendre la notion de git ☺ Nous allons prendre l'exemple d'un site de restaurant.</p>
+
+                    <p>Commence par créer un dossier <code>restaurant_website</code>, puis mets-toi dans le dossier avec ton terminal.</p>
+
+                    <p>On commence <b>toujours</b> par initialiser son repository, donc entre la commande suivante :</p>
+
+                    <pre><code class="language-shell">$ git init
+                    Initialized empty Git repository in /home/felix/ton_chemin/restaurant_website/.git/</code></pre>
+
+                    <p>Normalement, le dossier est vide et contient uniquement le dossier de configuration <code>.git/</code> que tu n'as pas besoin de toucher (il s'affichera avec <code>$ ls -a</code>). Tu es fin prêt pour commencer ton projet.</p>
+
+                    <p>D'abord, créons notre fichier <code>index.html</code> et ajoutons quelques lignes de HTML à l'intérieur :</p>
+
+                    <pre><code class="language-html">&lt;!DOCTYPE html>
+                    &lt;html>
+                    &lt;head>
+                    &lt;title>À la bonne table&lt;/title>
+                    &lt;/head>
+                    &lt;body>
+                    &lt;h1>Ce est le site de mon restaurant !&lt;/h1>
+                    &lt;/body>
+                    &lt;/html></code></pre>
+
+                    <p>Si tu fais la commande <code>git status</code>, ton terminal te dira ceci :</p>
+
+                    <pre><code class="language-shell">$ git status
+                    On branch master
+
+                    No commits yet
+
+                    Untracked files:
+                    (use "git add <file>..." to include in what will be committed)
+
+                    index.html
+
+                    nothing added to commit but untracked files present (use "git add" to track)</code></pre>
+
+                    <p>Cela veut dire qu'il a vu qu'un fichier <code>index.html</code> existe, et que ce dernier est <i>untracked</i> (c'est à dire que le photographe ne le prend pas en compte). Pour pouvoir le "track", il faut faire <code>git add</code> :</p>
+
+
+                    <pre><code class="language-shell">$ git add index.html</code></pre>
+
+                    <p>Tu verras que ce dernier est prêt avec <code>git status</code> :</p>
+
+                    <pre><code class="language-shell">$ git status
+                    On branch master
+
+                    No commits yet
+
+                    Changes to be committed:
+                    (use "git rm --cached <file>..." to unstage)
+
+                    new file:   index.html</code></pre>
+
+                    <p>Là, git a bien compris que le fichier <code>index.html</code> doit être photographié. Il sera donc bien pris en compte dans le prochain commit. Faisons ce commit, justement :</p>
+
+                    <pre><code class="language-shell">git commit -m "first commit // adding index.html"
+                    [master (root-commit) 279d87c] first commit // adding index.html
+                    1 file changed, 9 insertions(+)
+                    create mode 100644 index.html</code></pre>
+
+                    <p>Et voilà tu viens de faire ton premier commit ! Poursuivons ce "pas à pas" avec deux autres commits qui vont t'apprendre :</p>
+
+                    <ul>
+                      <li>À faire un commit avec deux fichiers.</li>
+                      <li>La puissance des commits.</li>
+                    </ul>
+
+                    <p>Nous allons maintenant ajouter du CSS à notre site. On va mettre les <code>h1</code> en rouge. Dans un fichier <code>styles.css</code>, ajoute les lignes suivantes :</p>
+
+                    <pre><code class="language-css">h1 {
+                    color: red;
+                    }</code></pre>
+
+                    <p>Puis, dans le fichier <code>index.html</code>, branche le fichier css :</p>
+
+                    <pre><code class="language-html">&lt;link rel="stylesheet" href="styles.css"></code></pre>
+
+                    <p>Voilà, tu as mis le titre en rouge, tu peux faire un commit ! Petit rappel : il te faut ajouter les fichiers modifiés, puis faire le commit. Voyons les fichiers avec <code>git commit</code> :</p>
+
+                    <pre><code class="language-shell">$ git commit
+                    On branch master
+                    Changes not staged for commit:
+                    (use "git add &lt;file>..." to update what will be committed)
+                    (use "git checkout -- &lt;file>..." to discard changes in working directory)
+
+                    modified:   index.html
+
+                    Untracked files:
+                    (use "git add &lt;file>..." to include in what will be committed)
+
+                    styles.css
+
+                    no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+
+                    <p>Git est très malin : il te dit que le fichier <code>index.html</code> a été modifié depuis le dernier commit, et qu'il y a un nouveau fichier pas encore <i>tracked</i>. Pour faire un commit, il nous faut ajouter les deux fichiers avec <code>git add</code> puis faire le commit :</p>
+
+                    <pre><code class="language-shell">$ git add index.html
+                    $ git add styles.css</code></pre>
+
+
+                    <p>Si tu fais <code>git status</code>, tu peux voir l'état des fichiers : </p>
+
+                    <pre><code class="language-shell">$ git status
+                    On branch master
+                    Changes to be committed:
+                    (use "git reset HEAD <file>..." to unstage)
+
+                    modified:   index.html
+                    new file:   styles.css</code></pre>
+
+                    <p>Parfait, git nous dit que ces fichiers seront pris en compte lors du prochain commit. Nous n'avons plus qu'à faire notre commit :</p>
+
+                    <pre><code class="language-shell">$ git commit -m "h1 in red"
+                    [master d25c926] h1 in red
+                    2 files changed, 5 insertions(+), 1 deletion(-)
+                    create mode 100644 styles.css</code></pre>
+
+                    <p>Super ! Tu viens de faire ton deuxième commit. Nous allons maintenant faire le troisième pour te montrer la puissance des commits, et de git status notamment.</p>
+
+                    <p>Prenons le cas où tu es en train de travailler sur le menu de ton restaurant. Tu hésites entre des <code>ol</code> et des <code>ul</code>. Pour le moment, ton fichier <code>index.html</code> ressemble à ceci :</p>
+
+                    <pre><code class="language-html">&lt;!DOCTYPE html>
+                    &lt;html>
+                    &lt;head>
+                    &lt;title>À la bonne table&lt;/title>
+                    &lt;link rel="stylesheet" href="styles.css">
+                    &lt;/head>
+                    &lt;body>
+                    &lt;h1>Ceci est le site de mon restaurant !&lt;/h1>
+                    &lt;h2>Le menu&lt;/h2>
+                    &lt;ul>
+                    &lt;li>Harengs pommes à l'huile&lt;/li>
+                    &lt;li>Blanquette de veau&lt;/li>
+                    &lt;li>TODO : trouver un dessert&lt;/li>
+                    &lt;/ul>
+                    &lt;/body>
+                    &lt;/html></code></pre>
+
+                    <p>En pleine hésitation, un collègue arrive et te demande de mettre les <code>h1</code> en <code>text-align: center;</code> et de faire un commit. Tu t'exécutes et change le fichier <code>style.css</code>. Si tu fais <code>git status</code> tu as :</p>
+
+                    <pre><code class="language-shell">$ git status
+                    On branch master
+                    Changes not staged for commit:
+                    (use "git add &lt;file>..." to update what will be committed)
+                    (use "git checkout -- &lt;file>..." to discard changes in working directory)
+
+                    modified:   index.html
+                    modified:   styles.css
+
+                    no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+
+                    <p>Git te dit que tu as modifié deux fichiers, mais tu ne veux en commit qu'un seul, car ce vilain "TODO : trouver un dessert" n'a pas vraiment sa place dans le menu. Pour ceci, il faut que tu <i>add</i> uniquement ton fichier <code>styles.css</code> pour faire un commit ne contenant que ce fichier :</p>
+
+                    <pre><code class="language-shell">$ git add styles.css</code></pre>
+
+                    <p>Si tu fais <code>git status</code> tu auras :</p>
+
+                    <pre><code class="language-shell">$ git status
+                    On branch master
+                    Changes to be committed:
+                    (use "git reset HEAD &lt;file>..." to unstage)
+
+                    modified:   styles.css
+
+                    Changes not staged for commit:
+                    (use "git add &lt;file>..." to update what will be committed)
+                    (use "git checkout -- &lt;file>..." to discard changes in working directory)
+
+                    modified:   index.html</code></pre>
+
+                    <p>Si tu as à peu près compris, git te dit que <code>styles.css</code> correspond au fichier qui sera dans le commit tandis que <code>index.html</code> ne sera pas pris en photo. C'est exactement ce que tu veux. Il ne te reste plus qu'à faire le commit :</p>
+
+                    <pre><code class="language-shell">git commit -m "text align center for h1"
+                    [master c94cb3d] text align center for h1
+                    1 file changed, 2 insertions(+), 1 deletion(-)</code></pre>
+
+                    <p>Puis si tu fais <code>git status</code>, git te dira que <code>index.html</code> a été modifié mais n'est toujours pas prévu dans le prochain commit :</p>
+
+                    <pre><code class="language-shell">$ git status
+                    On branch master
+                    Changes not staged for commit:
+                    (use "git add <file>..." to update what will be committed)
+                    (use "git checkout -- <file>..." to discard changes in working directory)
+
+                    modified:   index.html
+
+                    no changes added to commit (use "git add" and/or "git commit -a")</code></pre>
+
+                    <p>À travers cet exemple, j'espère que tu as compris la puissance du commit. C'est un outil super pratique pour faire des sauvegardes à un instant T de ton projet, ce qui a deux gros avantages :</p>
+
+                    <ul>
+                      <li>C'est extrêmement puissant pour collaborer à plusieurs sur un même dossier : on sait qui a fait quoi, quand et pourquoi.</li>
+                      <li>La capacité à pouvoir facilement revenir en arrière (ce que nous allons étudier dans la partie suivante).</li>
+                    </ul>
+
+                    <h4>3.1.4. Revenir en arrière</h4>
+                    <p>Comme nous l'avons vu, Git permet non seulement de faire des sauvegardes propres de ses projets, mais aussi de revenir en arrière facilement. Pour remonter le temps, ça se passe en deux étapes :</p>
+
+                    <ul>
+                      <li>Déterminer la sauvegarde où je veux revenir.</li>
+                      <li>Déterminer la raison du retour arrière :
+                        <ul>
+                          <li>Est-ce à titre purement indicatif, juste pour regarder ce qui a été fait avant ?</li>
+                          <li>S'agit-il d'un retour en arrière définitif ?</li>
+                        </ul>
+                      </li>
+                    </ul>
+
+
+                    <h5>3.1.4.1. Regarder l'historique des versions</h5>
+                    <p>La commande <code>git log</code> permet de connaitre les commits faits sur le projet. Par exemple pour ton projet de restaurant, <code>git log</code> ressemblerait à ceci :</p>
+
+                    <pre><code class="language-shell">$ git log
+                    commit c94cb3d84163a5877dec566a92ffbdc05661a64c (HEAD -> master)
+                    Author: felhix
+                    Date:   Tue Jun 4 18:36:08 2019 +0200
+
+                    text align center for h1
+
+                    commit d25c9262c0b019a0090cf0fe2f5b9159f5511b5c
+                    Author: felhix
+                    Date:   Tue Jun 4 18:23:52 2019 +0200
+
+                    h1 in red
+
+                    commit 279d87c30637bf4aea24e6765a428c65b44ec7ab
+                    Author: felhix
+                    Date:   Tue Jun 4 17:51:46 2019 +0200
+
+                    first commit // adding index.html</code></pre>
+
+                    <p>Pour quitter le log, il faut appuyer sur <code>Q</code>.</p>
+
+                    <p>Tu peux voir la liste des commits contenant les informations importantes :</p>
+
+                    <ul>
+                      <li>Qui a fait le commit.</li>
+                      <li>Quand le commit a été fait.</li>
+                      <li>Pourquoi ? (avec le message)</li>
+                      <li>Qu'est-ce qui a été commité ? (grâce au code bizarre)</li>
+                    </ul>
+
+                    <p>Le code <code>100d6f07dbf4cfb9103b3819e64432186750a1a2</code> est le SHA du commit. C'est son identifiant unique. C'est ce qui te servira pour le retour en arrière.</p>
+
+                    <h5>3.1.4.2. Revenir en arrière</h5>
+                    <p>Il y a deux façons de revenir en arrière :</p>
+
+                    <ul>
+                      <li>La première est à titre purement indicatif, et te servira  seulement à observer un état précédent</li>
+                      <li>La seconde est un retour définitif en mode "je veux revenir à tel endroit pour retravailler à partir de là"</li>
+                    </ul>
+
+                    <h4>3.7.1. Retour en arrière à titre purement indicatif</h4>
+                    <p>Imaginons que tu veux juste jeter un oeil sur un fichier à un instant T. Pour ceci, tu rentrerais la commande :</p>
+
+                    <pre><code class="language-bash">$ git checkout SHA</code></pre>
+
+                    <p>(en remplaçant "SHA" par le code que tu as eu lors du <code>git log</code>)</p>
+
+                    <p>Tu peux ainsi naviguer dans l'ancienne version pour consulter les fichiers à cet instant T. Pas plus compliqué ! Pour revenir à la version actuelle, tu n'as qu'à faire :</p>
+
+                    <pre><code class="language-bash">$ git checkout master</code></pre>
+
+                    <div class="card box-shadow-0 border-danger">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">⚠️ ALERTE ERREUR COMMUNE</h4>
+                          <p class="card-text">N'utilise pas cette commande si tu veux faire des modifications sur un fichier. Si jamais tu fais ça, tu auras droit à une erreur te faisant atterrir <a href="https://stackoverflow.com/questions/5772192/how-can-i-reconcile-detached-head-with-master-origin" target="_blank">sur l'un des threads les plus célèbres</a> de Stack Overflow. Si jamais tu veux revenir en arrière pour faire des modifications, passe à la section suivante.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card box-shadow-0 border-danger">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">⚠️ ALERTE ERREUR COMMUNE</h4>
+                          <p class="card-text"><code>git checkout</code> ne marche que si tu n'as aucune modification non sauvegardée. Si tu es entre deux commits, git checkout te renverra cette erreur :</p> 
+                          <pre><code class="language-bash">$ git checkout 100d6f07dbf4cfb9103b3819e64432186750a1a2           
+                          error: Your local changes to the following files would be overwritten by checkout:
+                          index.html
+                          Please commit your changes or stash them before you switch branches.
+                          Aborting</code></pre>
+
+                          <p>Dans ce cas, 2 possibilités . faire une sauvegarde (== faire un commit), ou tout effacer pour revenir au commit d'avant.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h4>3.7.2. Revenir en arrière définitivement</h4>
+                    <p>Tu peux revenir en arrière définitivement avec la commande <code>git reset</code> qui s'utilise comme ceci :</p>
+
+                    <pre><code class="language-bash">$ git reset --hard SHA</code></pre>
+
+                    <p>(en remplaçant "SHA" par le code reçu lors du <code>git log</code>)</p>
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🚀 ALERTE BONNE ASTUCE</h4>
+                          <p class="card-text">La commande <code>git reset</code> est aussi un bon moyen pour effacer son travail actuel et revenir au commit précédent. Imagine par exemple que tu es en train de travailler sur la diapo de Jean-Michel. En plein milieu, tu te dis que ton approche est mauvaise et tu as soudain envie d'effacer tout ce que tu as fait jusqu'à présent. Plutôt que de faire <code>CTRL</code> + <code>Z</code> plein de fois, tu peux rentrer la commande suivante :</p>
+                          <pre><code class="language-bash">$ git reset --hard</code></pre>
+                          <p>Et hop ! Tu reviens à ton dernier commit. Très pratique pour tester des concepts à la volée, ou quand tu n'as pas envie de commit les changements que tu viens de faire.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3>3.2. GitHub</h3>
+                    <p>Maintenant que tu es un champion du commit, nous allons voir comment mettre son code en ligne pour en faire profiter la terre entière, et pouvoir collaborer à plusieurs sur un projet.</p>
+
+                    <p>Grâce à git et GitHub, tu peux "push" ton code en ligne en quelques lignes de commandes à peine. Dans cette partie, nous verrons :</p>
+
+                    <ul>
+                      <li>Qu'est-ce que GitHub, et comment créer un repository.</li>
+                      <li>La notion de <i>remote</i> pour Git : comment lier ton repository local à un repository en ligne.</li>
+                      <li>les deux commandes maitresses : <code>git pull</code> et <code>git push</code>.</li>
+                    </ul>
+
+                    <h4>3.2.1. C'est quoi GitHub</h4>
+                    <p><a href="https://github.com/" target="_blank">GitHub</a> est une plateforme permettant deux choses très importantes dans l'univers du code :</p>
+
+                    <ul>
+                      <li>Pouvoir lier un repository Git local (sur ton ordinateur) à un repository que tu as créé en ligne sur la plateforme Github (un peu comme avec DropBox). Nous allons voir dans cette ressource comment le faire.</li>
+                      <li>Pouvoir travailler en équipe sur un même repository. Nous verrons ça plus tard.</li>
+                    </ul>
+
+                    <p>Un grand nombre d'entreprises utilisent GitHub pour travailler, ainsi qu'une grosse majorité des projets OpenSource. Le code de <a href="https://github.com/facebook/react" target="_blank">ReactJS</a>, <a href="https://github.com/twbs/bootstrap" target="_blank">Bootstrap</a>, ou encore <a href="https://github.com/rails/rails" target="_blank">Ruby on Rails</a> ont leur code sur GitHub et tout le monde peut y contribuer !</p>
+
+                    <p>Va sur GitHub et créé un compte. Ensuite, va <a href="https://github.com/new" target="_blank">créer un repository</a>, ce qui devrait te renvoyer à l'écran suivant :</p>
+
+                    <img src="https://i.imgur.com/WSlwKCG.png" class="img-fluid"><br>
+
+                    <p>Ok, décortiquons tout ça calmement :</p>
+
+                    <ul>
+                      <li>Le <i>Repository name</i> est le nom de ton repository.</li>
+                      <li>La <i>Description</i> est... sa description.</li>
+                      <li>Tu peux choisir de le mettre public ou privé.
+                        <ul>
+                          <li>Petite astuce : la plupart des gens sont un peu méfiants et préfèrent tout mettre en privé. Sur GitHub, tu n'as pas vraiment à te faire de soucis avec les repository publics. Au contraire, avoir des jolis repository en ligne montre que tu es actif sur la plateforme ! Un peu comme un CV, en quelque sorte.</li>
+                        </ul>
+                      </li>
+                      <li>Tu peux l'initialiser avec un <i>README</i> qui permet d'expliquer ce qu'est le projet et comment s'en servir. Pour ce premier projet, tu peux t'en passer.</li>
+                    </ul>
+
+                    <p>Si tu as bien tout fait, tu devrais avoir cet écran :</p>
+
+                    <img src="https://i.imgur.com/dFurtOV.png" class="img-fluid"><br>
+
+                    <p>Laisse-moi te traduire ces lignes bizarres en quelque chose de plus compréhensible : en gros, GitHub te dit que ton repository est prêt et qu'il est vide pour le moment. Il te donne même les commandes pour le lier à un repository local, à coup de <code>git remote add origin git@github.com:username/le_nom_de_ton_projet.git</code>. Nous allons voir ensemble la notion de remote dans la prochaine partie.</p>
+
+                    <h4>3.2.2. La notion de remote</h4>
+                    <p>Qu'est-ce qu'un "remote repository" ? C'est une version à distance de ton repo Git, un peu comme une copie stockée ailleurs (souvent sur Internet). Tu peux facilement faire "local -> remote" ou de "remote -> local" avec Git.</p>
+
+                    <p>Avec <code>git remote</code>, tu peux facilement ajouter des remotes, voir la liste des remotes, enlever des remotes.</p>
+
+                    <p>Il en existe plusieurs types :</p>
+
+                    <ul>
+                      <li>GitHub, plateforme qui te propose d'avoir un repository à distance, te permet aussi de partager ton travail à d'autres et de disposer d'une sauvegarde en cas de coup dur.</li>
+                      <li>Heroku, qui te permet de lui envoyer le code d'une application Rails pour qu'il la transforme en serveur (= qu'il la publie sur Internet);</li>
+                      <li>GitLab, similaire à GitHub;</li>
+                      <li>Et bien d'autres !</li>
+                    </ul>
+
+                    <p>Chaque remote aura un nom. Ce nom peut être par exemple "other_github", "origin", "heroku", ou "jetaime". Par convention, le repo en ligne principal s'appelle "origin", d'où la commande <code>$ git remote add origin ton_url</code> avec laquelle tu ajoutes un "remote repository" sur Github nommé "origin", avec "ton_url" en guise d'adresse.</p>  
+
+                    <p>Pour voir tous les "remote repository" associés à ton dossier git, tu peux faire : <code>$ git remote -v</code>. Cette commande est très pratique car faire de la superposition de remotes est une erreur classique quand on débute.</p>
+
+                    <p>Continuons l'exemple de notre restaurant. Dans l'écran de ton repo vide (voir image précédente), récupère la commande ressemblant à <code>git remote add origin git@github.com:username/le_nom_de_ton_projet.git</code>. Ensuite, dans ton terminal, va dans le dossier de ton restaurant puis colle la commande précédente. Tu devrais pouvoir voir les remote en tapant <code>git remote --v</code> :</p>
+
+                    <pre><code class="language-shell">git remote --v                                               
+                    origin  git@github.com:felhix/ton_super_nom.git (fetch)
+                    origin  git@github.com:felhix/ton_super_nom.git (push)</code></pre>
+
+
+                    <h4>3.2.3. Git push</h4>
+                    <p>La commande <code>git push</code> va envoyer ton code stocké en local vers un remote de ton choix. Elle s'utilise en faisant : <code>$ git push nom_du_remote nom_de_la_branche</code>. Si tu veux push ta branche "master" vers la remote "origin", tu feras donc :</p>
+
+                    <pre><code class="language-bash">$ git push origin master</code></pre>
+
+                    <p>Ou alors, si tu veux push ta branche "other_branch" vers la remote "heroku" tu feras :</p>
+
+                    <pre><code class="language-bash">$ git push heroku other_branch</code></pre>
+
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🤓 QUESTION RÉCURRENTE</h4>
+                          <p class="card-text"><b>Mais dis donc Jamy, c'est quoi une branche ?</b></p>
+                          <p>Ce n'est pas l'objet du cours, mais je vais faire un petit aparté à ce sujet. Une branche, grosso modo, est une bifurcation de ton projet sur laquelle tu vas travailler de manière indépendante. Grâce à cette fonctionnalité super pratique, tu peux travailler sur une version parallèle de ton projet et la re-fusionner plus tard, quand tu seras content des modifications apportées. Jusqu'à maintenant, tu as seulement fait des commits sur la branche Master. Mais tu verras, la plupart des fonctionnalités te demanderont de travailler sur une branche plutôt que de faire des commits directement sur Master, afin d'éviter d'exposer à tes utilisateurs des fonctionnalités non terminées.</p>
+                          <img src="https://i.imgur.com/fKP7zaP.png" class="img-fluid">
+                          <p>Prenons l'exemple de notre site. Tu voudrais reprendre les couleurs du menu, ce qui représente plusieurs jours de travail. Pour ceci, tu voudrais créer une branche nommée <code>new_design</code> sur laquelle tu vas faire plusieurs commits, puis montrer le design à ton client. Quand tu seras content, tu n'auras plus qu'à fusionner la branche <code>new_design</code> avec la branche <code>master</code> et à toi la gloire !</p>
+                          <p>Pour le moment, nous n'allons pas utiliser les branches. Sache juste que ce système existe, et que tu vas travailler sur la branche principale nommée <code>master</code>.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🤓 QUESTION RÉCURRENTE</h4>
+                          <p class="card-text"><b>Je viens d'initialiser un repo mais quand je push sur GitHub, certains dossiers de mon repo n'apparaissent pas (mais le reste si). Pourquoi?</b></p>
+                          <p>S’il n’y a aucun fichier dans un dossier, Git ne "push" pas le dossier. Ne t'étonne donc pas si un dossier vide sur ton ordi n'apparait pas dans GitHub : dès qu'un fichier (Ruby ou autre) y sera ajouté avec <code>$ git add</code> puis "commité" et pushed, cette fois le dossier apparaîtra bien, avec le fichier qu'il contient.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h4>3.2.4. Git pull</h4>
+                    <p>La commande <code>git pull</code> est le contraire de <code>git push</code> : elle remplace le code en local avec celui de la remote de ton choix. Elle s'utilise de la manière suivante : <code>$ git pull nom_remote nom_branche</code>. Ainsi, si tu veux pull ta branche "master" depuis la remote "origin" tu feras :</p>
+
+                    <pre><code class="language-bash">$ git pull origin master</code></pre>
+
+
+                    <h3>3.3. Les messages d'erreur</h3>
+                    <p>On ne va pas se leurrer, Git n'est pas facile à utiliser quand on débute... Avant de te précipiter et de maudire ton ordinateur, nous allons annoncer quelque chose : c'est normal d'avoir des erreurs, surtout quand on commence. C'est arrivé à TOUT le monde, et surtout à ceux qui sont à l'aise aujourd'hui ❤ Le secret, c'est de ne pas désespérer, et de résoudre tes soucis calmement, un à un. Comme tout développeur est passé par ce chemin, les réponses aux problèmes classiques pullulent sur Stack Overflow. Copie-colle ton message d'erreur, lis les réponses, essaie de les comprendre, et trouve la solution à ton problème.</p>
+
+
+                    <div class="card box-shadow-0 border-success">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🎨 EXEMPLE ILLUSTRÉ</h4>
+                          <p class="card-text">Prenons l'exemple d'une erreur que j'ai eue à mes débuts sur git. J'avais un repo git en local que j'avais déjà lié à une remote <code>origin</code> qui était un repo GitHub. Je n'étais pas content de mon repo GitHub, donc je l'ai supprimé, avant d'en re-créer un. Puis j'ai voulu lier mon repo local à ce nouveau repo GitHub en utilisant <code>$ git remote add origin url_du_repo</code>. Sauf que :</p>
+                          <pre><<code class="language-bash">$ git remote add origin url_repo
+                          fatal: remote origin already exists.</code></pre>
+                          <p>Oh mon dieu, Fatal !! En général, les erreurs sont en mode "error bug". Mais là, s'il est écrit "fatal", ça doit être grave, non ? Non. Une petite recherche Google du message d'erreur, et tu pourras découvrir que <a href="https://stackoverflow.com/questions/1221840/remote-origin-already-exists-on-git-push-to-a-new-repository" target="_blank">c'est juste un problème de remote origin qui existe déjà</a>.</p>
+                          <p>Bref, je ne te le cache pas : les erreurs, tu en auras. La clé de succès de The Hacking Project est justement ta capacité à bien les analyser, et à faire les bonnes recherches Google qui résoudront ton problème.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h2>4. Points importants à retenir</h2>
+                    <h3>4.0. Récapitulatif vidéo</h3>
+                    <p>Ton cerveau fume devant autant de texte ? Tu aimerais bien une vidéo qui te sauve la vie ? J'ai ce qu'il te faut. Caroline de la promo hiver 2021 a concocté <a href="https://www.youtube.com/watch?v=l2E6UMbUYis" target="_blank">une vidéo qui explique et introduit Git et GitHub</a>. Elle permettra de te mettre dans le bain de Git :) THP est une communauté soudée où les élèves peuvent venir et contribuer au bien commun. Même toi tu peux apporter ta contribution à THP, n'oublie pas cela ❤️</p>
+
+
+                    <h3>4.1. Les commandes pratiques</h3>
+                    <p>Voici un récap des commandes de base :</p>
+                    <ul>
+                      <li><code>$ git init</code> : il faut TOUJOURS commencer par initialiser git avec cette commande. C'est elle qui transforme ton répertoire courant en repository git.</li>
+                      <li><code>$ git add ton_fichier</code> : ajoute aux sauvegardes le fichier mentionné.</li>
+                      <li><code>$ git commit -m "ton commentaire"</code> : crée un commit (commit = sauvegarde suivie d'un commentaire).</li>
+                      <li><code>$ git status</code> : te donne le statut actuel de git.</li>
+                    </ul>
+
+
+                    <h3>4.2. Lire l'historique</h3>
+                    <p><code>$ git log</code> : permet de voir l'historique de tous les commits, qui sont rangés par :</p>
+                    <ul>
+                      <li>SHA : liste de chiffres et lettres qui identifient de façon unique le commit.</li>
+                      <li>Auteur</li>
+                      <li>Date</li>
+                      <li>Message fourni lors du commit, qui doit être clair et précis pour te permettre de savoir ce que faisait au moment de cette sauvegarde.. C'est peut-être pénible, mais tu te remercieras plus tard.</li>
+                    </ul>
+                    <p>Pour quitter le log, il faut appuyer sur <code>Q</code>.</p>
+
+
+                    <h3>4.3. Se positionner sur un commit donné</h3>
+                    <p>Imaginons que l'on veuille vérifier un truc sur un vieux commit. On va utiliser la commande <code>$ git checkout</code>, utilisée comme ceci : </p>
+                    <ul>
+                      <li><code>$ git checkout 45581cebdd2cae494f80f44010af9e4a86c9b8fa</code> : dit à git de se positionner sur ce SHA précis. Attention à ne pas faire de modifications !</li>
+                      <li><code>$ git checkout master</code> : une fois que l'on a fini de se balader, il faut revenir à la version présente de notre repository avec cette commande.</li>
+                    </ul>
+
+
+                    <p>Si tu veux revenir en arrière définitivement, tu utiliseras <code>$ git reset --hard SHA</code>.</p>
+                    <ul>
+                      <li><code>$ git reset --hard 45581cebdd2cae494f80f44010af9e4a86c9b8fa</code> : on dit à git de se positionner sur ce SHA précis.</li>
+                      <li><code>$ git reset --hard</code> : efface tout pour revenir au dernier commit.</li>
+                    </ul>
+
+
+                    <h2>5. Pour aller plus loin</h2>
+                    <p>Le <a href="https://openclassrooms.com/courses/gerer-son-code-avec-git-et-github" target="_blank">cours de OpenClassrooms</a> sur Git est une très bonne ressource pour aller plus loin. Il explique notamment la notion de branches et de fusions.</p>
+
+                    <p>Voici également <a href="https://www.vikingcodeschool.com/web-development-basics/getting-to-know-git" target="_blank">un cours</a> sur Git de la Viking Code School. Il explique bien les bases de Git et fournit une bonne alternative au nôtre.</p>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='row m-3'>
+          <div class='col-12'>
+            <div class='card'>
+              <div class='card-header' style='border-top: 3px solid #5E66E5'>
+                <h1>
+                Ressource : 
+                Mettre en ligne son site
+                </h1>
+                <a class='heading-elements-toggle'>
+                  <i class='la la-ellipsis-v font-medium-3'></i>
+                </a>
+                <div class='heading-elements'>
+                  <ul class='list-inline mb-0'>
+                    <li>
+                      <a href="/fr/dashboard/courses/4/lessons/301/lesson_submissions/new"><i class='ft-edit' data-original-title='Proposer une amélioration' data-placement='top' data-toggle='tooltip'></i>
+                    </a></li>
+                    <li>
+                      <a data-action='collapse'>
+                      <i class='ft-minus'></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-action='expand'>
+                      <i class='ft-maximize'></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class='card-content collapse show'>
+                <div class='card-body'>
+                  <div class='tab-pane active' id='home1' role='tabpanel'>
+
+                    <h2>1. Introduction</h2>
+                    <p>C'est cool, de savoir faire des super sites internet... Mais quel est l'intérêt s'il n'y a personne pour les admirer ?</p>
+
+                    <p>Cette ressource est une introduction à la mise en ligne d'un site Internet, avec plein de bons liens pour le faire.</p>
+
+                    <h2>2. Historique</h2>
+                    <p>Il y a beaucoup à dire sur le fonctionnement d'internet et sur les protocoles. A la fin de cette ressource, nous avons attaché quelques vidéos si tu as envie d'en savoir plus.</p>
+
+                    <p>Pour l'instant, voici quelques lectures pour comprendre les DNS et ce qui se passe quand tu tapes dans ton explorateur google.com : </p>
+                    <ul>
+                      <li>Vlad Gerasimov a fait <a href="https://www.vladstudio.com/wallpaper/?how_internet_works" target="_blank">un comic</a> expliquant de façon simple les bases du DNS.</li>
+                      <li>dnsimple ont réalisé <a href="https://howdns.works/" target="_blank">une BD</a> expliquant aussi le principe des DNS.</li>
+                    </ul>
+
+
+                    <h2>3. Le cours</h2>
+                    <p>Pour le moment, ton site se trouve uniquement sur ton ordinateur personnel. Pour le mettre en ligne, 2 étapes sont nécessaires :</p>
+
+                    <ul>
+                      <li>Héberger son code quelque part. Il est généralement possible de le faire via le service qui vend des noms de domaine.</li>
+                      <li>Obtenir un nom de domaine (pour avoir des sites du genre www.tonsite.com) puis faire en sorte qu'il redirige vers l'endroit où est hébergé ton code. Cela passe par un branchement de DNS vers le service qui te vend le nom de domaine.</li>
+                    </ul>
+
+                    <h3>3.1. Héberger ton site sur un service</h3>
+                    <p>Comme dit plus haut, la plupart des entreprises d'achat de noms de domaine proposent aussi d'héberger ton code. C'est une solution facile car elle ne nécessite que peu de branchements de DNS. En effet, tout est sur la même plateforme !</p>
+
+                    <h3>3.2. Acheter un nom de domaine</h3>
+                    <p>Maintenant, pour acheter un nom de domaine, tu peux passer par :</p>
+                    <ul>
+                      <li><a href="https://www.ovh.com/fr/" target="_blank">OVH</a>, une des rares licornes françaises, qui propose un service d'achat de nom de domaine. Ils proposent aussi d'héberger du code de façon simple et peu onéreuse.</li>
+                      <li><a href="https://www.gandi.net/fr" target="_blank">Gandi</a>, qui est aussi un des leaders dans les noms de domaine.</li>
+                      <li><a href="https://www.1and1.fr/" target="_blank">1and1</a>, qui propose de l'achat de noms de domaine, avec de l'hébergement très facile et bon marché.</li>
+                    </ul>
+
+
+                    <h3>3.3. Des services de mise en ligne gratuite de code</h3>
+
+                    <p>Si tu veux mettre en ligne ton site sans avoir à acheter un nom de domaine, cette liste de services proposant de la mise en ligne de code simple te sera utile :</p>
+                    <ul>
+                      <li>Le plus célèbre : <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Ce service de GitHub propose à chacun de ses utilisateurs d'héberger leur code sur le net. Pour cela, il suffit d'aller dans les settings d'un de tes repo, à la section Github Pages, puis d'attribuer une source (généralement, master branch). C'est aussi simple que ça. C'est d'ailleurs très souvent le site perso de tout tech qui se respecte. Voici maintenant quelques ressources pour apprendre à maitriser GitHub Pages :
+                        <ul>
+                          <li>MicrowaveSam a fait <a href="https://www.youtube.com/watch?v=FiOgz3nKpgk" target="_blank">une vidéo</a> expliquant comment brancher GitHub Pages. Il va même jusqu'à expliquer les branchements de CDN pour attribuer un nom de domaine personnalisé à ton site.</li>
+                        </ul>
+                      </li>
+                      <li>Il y a aussi <a href="http://surge.sh/" target="_blank">Surge</a>, un super service pour mettre en ligne rapido des dossiers à toi. </li>
+                    </ul>
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🚀 ALERTE BONNE ASTUCE</h4>
+                          <p>Un site (que j'aime beaucoup) te permet d'afficher à quoi ressemble ta page en ligne est <a href="https://raw.githack.com/" target="_blank">RawGit (remplacé par RawGitHack)</a>. Tu peux y coller l'url GitHub du fichier <code>index.html</code> et ainsi avoir un aperçu que tu peux partager à la terre entière :) Envoie tes sites à tes proches ! C'est un site très pratique pour partager facilement une page et avoir un sentiment de puissance. </p>
+                          <img src="https://i.imgur.com/mpD12I8.png" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <h2>4. Points importants à retenir</h2>
+                    <p>Récapitulons :</p>
+                    <ul>
+                      <li>Pour avoir un site en ligne, il faut héberger son code et acheter un nom de domaine. La plupart des vendeurs de noms de domaine proposent un hébergement de code simple. OVH est une solution peu chère et pratique qui fait le travail.</li>
+                      <li>Il existe des services de mise en ligne de code qui te proposent également d'avoir une version accessible en ligne de ton site. GitHub Pages est l'un des plus connus et réputés.</li>
+                    </ul>
+
+
+                    <h2>5. Pour aller plus loin</h2>
+                    <p>Le fantastique cours CS50 a réalisé <a href="https://www.youtube.com/watch?v=PUPDGbnpSjw" target="_blank">une introduction au monde HTTP</a>, disponible sur Youtube. Cet amphi de 1h40 t'expliquera le monde de HTTP/WWW/TCP/etc.</p>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='row m-3'>
+          <div class='col-12'>
+            <div class='card'>
+              <div class='card-header' style='border-top: 3px solid #FF4081'>
+              <h1>
+              Projet : 
+              Ton premier repository GitHub
+              </h1>
+              <a class='heading-elements-toggle'>
+                <i class='la la-ellipsis-v font-medium-3'></i>
+              </a>
+              <div class='heading-elements'>
+                <ul class='list-inline mb-0'>
+                  <li>
+                    <a href="/fr/dashboard/courses/4/projects/112/project_submissions/new"><i class='ft-edit' data-original-title='Proposer une amélioration' data-placement='top' data-toggle='tooltip'></i>
+                    </a></li>
+                  <li>
+                    <a data-action='collapse'>
+                    <i class='ft-minus'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-action='expand'>
+                    <i class='ft-maximize'></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class='card-content collapse show'>
+              <div class='card-body'>
+                <div class='tab-pane active' id='home1' role='tabpanel'>
+
+                  <h2>1. Introduction</h2>
+                  <p>Avec ce projet, tu vas enfin pouvoir mettre en pratique ce que tu as appris sur le terminal, Git, et Github ! Il est assez simple, mais nous allons quand même t'accompagner à travers chacune des étapes.</p>
+
+                  <p>Tu vas devoir créer ton premier repository, le mettre en ligne sur GitHub, puis interagir avec lui à partir de ton ordinateur. Oh yeah !</p>
+
+                  <h2>2. Le contenu du projet</h2>
+
+
+                  <h3>2.1. Créer le repo sur GitHub</h3>
+                  <p>Si ce n'est pas déjà fait, va créer un compte sur <a href="https://github.com/" target="_blank">GitHub</a>, puis un nouveau repository.</p>
+
+                  <p>Au moment de la création du repo, GitHub te demandera :</p>
+                  <ul>
+                    <li>le <i>Repository name</i> : donne-lui un nom du genre <code>git-thp</code>.</li>
+                    <li>une <i>description</i> : c'est optionnel, donc laisse-la vide.</li>
+                    <li>s'il sera public ou privé : tu as le choix (depuis l'acquisition de GitHub par Microsoft, <a href="https://techcrunch.com/2019/01/07/github-free-users-now-get-unlimited-private-repositories/" target="_blank">les repo privés ne sont plus limités</a>).</li>
+                    <li>si tu veux <i>
+                    initialize with a README</i> : non, nous allons l'ajouter à la main.</li>
+                  </ul>
+
+                  <div class="card box-shadow-0 border-success">
+                    <div class="card-content collapse show">
+                      <div class="card-body">
+                        <h4 class="card-title">📚 INSTANT CULTURE GÉ</h3>
+                        <p class="card-text">Un README est un fichier que l'on retrouve toujours dans un repository Git. Il permet à une personne qui débarque sur le projet de mieux le comprendre, de voir comment il marche et d'avoir une documentation exhaustive. Par exemple, tu peux voir <a href="https://github.com/facebook/react" target="_blank">ici</a> la page de React JS avec son README qui t'explique ce que fait cette librairie (ou "framework") Javascript. Pour le projet qui nous intéresse, le README sera un simple texte expliquant qu'il s'agit d'une introduction à GitHub, Git, et au terminal.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>Tu devrais maintenant arriver à une page incompréhensible similaire à : </p>
+                    <div class="imgwrapper">
+                      <img src="/assets/git-1-e32560080d19aaf7a421d18f47f411d64ff940ccece7dbe06e48252337c0ea2b.jpg" class="img-fluid">
+                    </div>
+                    <br><br>
+                    <p>Cette page te dit seulement que ton repository a bien été crée, qu'il est vide et prêt à être couplé à un dossier présent sur ton ordinateur. Nous allons donc prendre ce repo, et le mettre sur ton ordinateur.</p>
+
+                    <p>Comme tu es le propriétaire de ce repo, il te suffit de le cloner pour pouvoir travailler dessus facilement. Avec ton terminal, positionne-toi dans le dossier d'aujourd'hui, puis créé un nouveau dossier pour ce projet avec <code>mkdir</code>. Place-toi à l'intérieur avec la commande <code>cd</code>.</p>
+
+                    <p>Une fois dans le bon dossier, te voici prêt à cloner ton repo vide à l'aide de la commande <code>git clone</code> : </p>
+                    <pre><code class="language-bash">$ git clone https://github.com/ton_username/le_nom_de_ton_repo</code></pre>
+
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🤓 QUESTION RÉCURRENTE</h3>
+                          <h6>Mais dis-donc Jamy, c'est quoi la commande <code>git clone</code> ?</h6>
+                          <p>C'est une commande très pratique qui sert à télécharger un repository GitHub sur ton ordinateur.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <p>Et voilà, tu as lié ton premier dossier à un repo GitHub ! À partir de là, tu pourras faire des commits, puis les <i>push</i> sur le repo GitHub.</p>
+
+                    <h3>2.2. Travailler sur le projet depuis ton ordinateur</h3>
+                    <p>Bon. Et si on donnait un peu de pep's à ce dossier ? Commençons par faire un README pour expliquer ce qu'il fait.</p><br>
+
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🤓 QUESTION RÉCURRENTE</h3>
+                          <h6>Mais dis-donc Jamy, pourquoi ne dois-je pas faire <code>git init</code>, qui est en théorie LA première commande à faire dans tout nouveau repo ?</h6>
+                          <p>Excellente question, chef. Ça prouve que tu suis ! Git init sert à dire à ton ordinateur "hey bro, ici je vais avoir un dossier qui sera tracked par git, donc je vais faire des sauvegardes fréquentes". Mais comme cette fois tu as fait un clone, ton ordinateur sait déjà qu'il s'agit d'un dossier git. Pas besoin de faire git init !</p>
+                          <p>D'ailleurs, quand tu fais un clone, tu associes directement ta remote origin au repository GitHub. Tu peux le voir en faisant <code>git remote --v</code>. Tu pourras aussi constater avec cette <a href="https://stackoverflow.com/a/4856151" target="_blank">réponse de Stack Overflow</a> que git clone est plus ou moins l'équivalent de 5 commandes.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h4>2.2.1. Création du premier fichier</h4>
+
+                    <p>Avec la commande <code>touch</code>, crée un nouveau fichier qui s'appelle <code>README.md</code>. Ouvre ton dossier de travail avec ton éditeur de texte favori, puis écris dans le fichier <code>README.md</code> les lignes suivantes : </p>
+                    <pre><code class="language-bash">Ceci est mon tout premier repo GitHub, waow !</code></pre>
+
+                    <h4>2.2.2. Ajout du premier fichier</h4>
+
+
+                    <p>Si tu tapes la commande <code>git status</code>, ton ordinateur devrait te dire un truc du genre : "hey man ! Je suis sur la branche master, sur le premier commit. J'ai trouvé nouveau fichier qui s'appelle README.md, et qui n'est pas répertorié dans le dossier git quand tu fais des sauvegardes. Si tu veux que je le prenne en compte lors de ton prochain commit, fais un <code>git add</code> steuplé  !". Trop cool, on va donc ajouter ce fichier avec git add.</p>
+
+                    <h4>2.2.3. Premier commit</h4>
+
+                    <p>Une fois que tu as ajouté ton fichier avec git add, tu peux refaire git status. Tu auras un écran similaire, mais un peu différent. Cette fois, ton ordinateur te dit "hey toi ! Je suis sur la branche master, sur le premier commit. Tu as au moins un fichier ajouté au dossier git qui diffère par rapport au précédent commit. Si tu fais un commit maintenant, ce fichier sera sauvegardé !". Comme tu l'as sans doute compris, il est temps de faire ton premier commit avec la commande <code>git commit</code>. Comme commentaire, je te conseille le très explicite "Ajout du README".</p>
+
+                    <p>Si tu tapes <code>$ git log</code>, tu pourras dérouler l'historique de tes différents commits. Si tu as bien effectué le commit précédent, tu devrais le voir affiché à l'intérieur.</p>
+
+
+                    <div class="card box-shadow-0 border-success">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🎨 EXEMPLE ILLUSTRÉ</h4>
+                          <p>Tu te demandes peut-être quelle est la différence entre add, création de fichier et commit. C'est vrai que l'on s'y perd facilement... Pour éclaircir les choses, prenons une analogie : imagine que ton projet représente une soirée où chaque fichier correspond à l'un des participants. Git te sert à capturer des photos de la fête, et à savoir précisément quelles personnes tu vas prendre en photo.</p>
+
+                          <h6>Les gens sur la photo</h6>
+                          <p>De temps en temps, de nouveaux invités vont s'incruster (création de fichier). Il devient donc nécessaire de préciser à ton ordinateur que tu veux aussi les prendre en photo. Tu vas donc utiliser <code>git add</code> pour choisir précisément qui sera présent sur tes clichés. Parfois, certains fichiers ne seront pas prêts à être photographiés. Ils auront changé par rapport à la dernière photo (les ravages de l'alcool, tout ça...), mais tu ne veux pas les re-capturer. Quand tu feras git status, ils seront <i>untracked</i>, ce qui est parfait. Tu vas donc juste ajouter les fichiers de ton choix avec git add.</p>
+
+                          <h6>Prendre la photo</h6>
+                          <p>Une fois que ton cadre est prêt (avec toutes les personnes que tu veux prendre en photo et pas les autres), tu peux faire <code>git commit</code> pour appuyer sur le déclencheur, et ajouter un joli commentaire du style "la bande à féfé".</p>
+                          <p>Tu pourras prendre une autre photo plus tard avec d'autres fichiers en faisant git add, puis git commit.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3>2.3. Mettre ton projet en ligne</h3>
+                    <p>Maintenant que tu as fait ton premier commit, nous allons tout mettre en ligne, puis admirer ton beau travail.</p>
+
+                    <p>La commande <code>$ git push origin master</code> va demander à Git de mettre ton code en ligne. Si tu vas sur la page de ton projet (genre : https://github.com/ton_username/le_nom_de_ton_repo), ton dossier devrait être à jour et inclure un super README.md !</p>
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🤓 QUESTION RÉCURRENTE</h3>
+                          <h6>Mais dis-donc Jamy, tu m'embrouilles un peu, là... Ça veut quoi, "Git push origin master" ?</h6>
+                          <p>Cette commande utilise 4 mots que nous allons décortiquer :</p>
+                          <ul>
+                            <li><code>git</code> : tu utilises le programme git de ton terminal. Jusqu'ici, tout va bien.</li>
+                            <li><code>push</code> : tu fais un <i>push</i>, c'est à dire que tu vas pousser (ou envoyer) ton projet...</li>
+                            <li><code>origin</code> : .. à la <a href="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-git/#depot-distant" target="_blank">remote</a> <i>origin</i> de ton projet. En faisant git clone, tu as mis ta remote origin par défaut au dossier GitHub, mais tu aurais pu push vers ta remote <i>genesis</i>, ou ta remote <i>my_super_name_cool</i>. Tu peux voir l'intégralité de tes remotes en faisant <code>$ git remote -v</code>.</li>
+                            <li><code>master</code> : sur la branche master.</li>
+                          </ul>
+                          <p>Ainsi, si tu avais tapé <code>$ git push heroku other_branch</code>, tu aurais fait un git push dans ton remote <i>heroku</i> sur la branche <i>other_branch</i>.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <h3>2.4. Ajouter un fichier</h3>
+                    <p>Maintenant, crée un nouveau fichier nommé <code>kikou.txt</code> et ajoute-le à ton repository. Effectue un commit, puis push le tout sur ta remote origin. Confirme que tout a bien été fait en allant sur ton repo GitHub et en actualisant.</p>
+
+                    <h3>2.5. Le shell-enge</h3>
+                    <p>La meilleure façon d'apprendre, c'est par la pratique. Si jamais tu veux aller plus loin dans le monde du développement, il te faudra manipuler le terminal à la perfection. Pour t'aider à t'améliorer, nous allons te demander de faire (*roulement de tambour*)... le <i>SHELL-ENGE©</i> !</p>
+                    <p>Cette semaine, TOUTES les actions que tu effectues sur ton ordinateur devront être faites avec le terminal plutôt qu'avec l'explorateur habituel. Par exemple, si tu dois bouger un fichier d'un dossier à un autre, utilise le terminal.</p>
+
+                    <p>Ça peut te paraître inutile et fastidieux car chaque action va te demander plus de temps (tant que tu n'y es pas habitué), mais crois-moi : c'est un excellent moyen d'apprendre très rapidement à te servir du terminal. Je t'invite donc à parcourir Google pour trouver les équivalents (pour le terminal) des fonctions de base de ton explorateur.</p>
+
+
+                    <h2>3. Pour aller plus loin</h2>
+                    <p>Cette partie est optionnelle. Fais-la seulement si tu souhaites devenir plus à l'aise avec les manipulations de Git.</p>
+
+                    <p>Pour aller plus loin, reproduis le projet ci-haut depuis le début, mais cette fois SANS lire la marche à suivre. Tu devras en gros :</p>
+                    <ul>
+                      <li>Créer un repository sur Github, puis l'importer sur ton ordinateur.</li>
+                      <li>Créer un fichier README.md puis commit et push sur GitHub.</li>
+                      <li>Créer un fichier kikou.txt puis commit et push sur GitHub.</li>
+                    </ul>
+
+                    <H2>4. Rendu attendu</H2>
+                    <p>Voici ce que tu devras avoir : https://github.com/barifche/Git-thp.git</p>
+                    <ul>
+                    <li>Un repository GitHub contenant deux fichiers : un fichier <code>README.md</code> et un autre appelé <code>kikou.txt</code>.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='row m-3'>
+          <div class='col-12'>
+            <div class='card'>
+              <div class='card-header' style='border-top: 3px solid #FF4081'>
+                <h1>
+                Projet : 
+                Mettre en ligne la page Google
+                </h1>
+                <a class='heading-elements-toggle'>
+                  <i class='la la-ellipsis-v font-medium-3'></i>
+                </a>
+                <div class='heading-elements'>
+                  <ul class='list-inline mb-0'>
+                    <li>
+                      <a href="/fr/dashboard/courses/4/projects/113/project_submissions/new"><i class='ft-edit' data-original-title='Proposer une amélioration' data-placement='top' data-toggle='tooltip'></i>
+                    </a></li>
+                    <li>
+                      <a data-action='collapse'>
+                      <i class='ft-minus'></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-action='expand'>
+                      <i class='ft-maximize'></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class='card-content collapse show'>
+                <div class='card-body'>
+                  <div class='tab-pane active' id='home1' role='tabpanel'>
+                    <h2>1. Introduction</h2>
+                    <p>Ce projet sera simple : tu vas reprendre celui de Google (de la veille), et le mettre en ligne par plusieurs moyens :</p>
+
+                    <ul>
+                      <li>Via GitHub Pages.</li>
+                      <li>Avec un nom de domaine à toi.</li>
+                    </ul>
+
+                    <p>C'est facile à dire, mais tu verras que brancher des mises en ligne n'est jamais aisé. Nous te laisserons donc la journée pour le faire.</p>
+
+                    <h2>2. Le projet</h2>
+                    <h3>2.1. GitHub Pages</h3>
+                    <p>Arrange-toi pour mettre ta page Google sur ton_username_github.github.io. Tous les moyens sont bons tant que le projet se retrouve en ligne sur cette url.</p>
+
+                    <h3>2.2. Un nom de domaine</h3>
+                    <p>Va sur un service proposant un nom de domaine, choisis-en un, puis branche ta page d'accueil de Google dessus.</p>
+
+                    <div class="card box-shadow-0 border-info">
+                      <div class="card-content collapse show">
+                        <div class="card-body">
+                          <h4 class="card-title">🚀 ALERTE BONNE ASTUCE</h4>
+                          <p>N'hésite pas à prendre un nom de domaine pour ton association ou ta startup ! Et sinon, tu peux juste prendre un nom de domaine perso où tu y mettras ton CV en mode BG. Un peu comme le site perso de <a href="https://marcgg.com/" target="_blank">Marc Gauthier</a> par exemple.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <h2>3. Rendu attendu</h2>
+                    <p>Ton site de Google en ligne sur :</p>
+                    <ul>
+                    <li>GitHub Pages.</li>
+                    <li>Un nom de domaine perso.</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
